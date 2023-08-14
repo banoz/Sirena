@@ -231,10 +231,10 @@ void setup() {
   DEBUG_PRINTLN("starting...");
 #endif
 
-  pinMode(POWER_SW, INPUT_PULLUP);
-  pinMode(BREW1_SW, INPUT_PULLUP);
-  pinMode(BREW2_SW, INPUT_PULLUP);
-  pinMode(STEAM_SW, INPUT_PULLUP);
+  pinMode(POWER_SW, INPUT);
+  pinMode(BREW1_SW, INPUT);
+  pinMode(BREW2_SW, INPUT);
+  pinMode(STEAM_SW, INPUT);
 
   pinMode(POWER_LED, OUTPUT);
   pinMode(BREW1_LED, OUTPUT);
