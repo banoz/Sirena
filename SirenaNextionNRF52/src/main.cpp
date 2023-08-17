@@ -142,10 +142,10 @@ void bleSetup() {
 void parseLedState(uint8_t ledState) {
   brew1LedState = (ledState >> 0) & 1u;
   brew2LedState = (ledState >> 1) & 1u;
+  steamLedState = (ledState >> 4) & 1u;
 }
 
 void parseLedStateEx(uint8_t ledState) {
-  steamLedState = (ledState >> 0) & 1u;
   powerLedState = (ledState >> 2) & 1u;
 }
 
